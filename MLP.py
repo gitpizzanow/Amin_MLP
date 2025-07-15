@@ -58,16 +58,14 @@ layer ) :
   #Z = w @ input
   z = layer.weights @ input
   
-  
-  z +=  layer.baises.reshape(-1,1)
+  z+=layer.baises.reshape(-1,1)
   layer.outputs = sigmoid(z)
-  
-  layer.outputs = layer.outputs.flatten()
-  
 
 
 def compute_deltas():pass
   
+
+
 
 
 
